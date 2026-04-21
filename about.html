@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Sophia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* About-page specific styles */
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: end;
+      padding: 5rem clamp(1.5rem, 8vw, 7rem) 0;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .about-hero__image {
+      /* ✏️  When you add a real photo, replace this placeholder block */
+      aspect-ratio: 3 / 4;
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(160deg, var(--clr-sage) 0%, var(--clr-bark) 60%, var(--clr-umber) 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+
+    .about-hero__image-caption {
+      font-family: var(--ff-serif);
+      font-style: italic;
+      font-size: 0.9rem;
+      color: rgba(244, 240, 230, 0.65);
+    }
+
+    .about-hero__text {
+      padding-bottom: 3rem;
+    }
+
+    .about-hero__pull {
+      font-family: var(--ff-serif);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 300;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 2rem;
+    }
+
+    .about-hero__pull em {
+      font-style: italic;
+      color: var(--clr-bark);
+    }
+
+    .about-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--clr-tan);
+      margin: 2rem 0;
+    }
+
+    .about-body p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--clr-text-muted);
+      margin-bottom: 1.25rem;
+      max-width: 52ch;
+    }
+
+    .about-body p:last-child { margin-bottom: 0; }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1px;
+      background: var(--clr-border);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: 2.5rem;
+    }
+
+    .value-item {
+      background: var(--clr-bg);
+      padding: 2rem 1.75rem;
+    }
+
+    .value-item__word {
+      font-family: var(--ff-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 0.4rem;
+    }
+
+    .value-item__note {
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      line-height: 1.6;
+    }
+
+    .timeline {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--clr-border);
+    }
+
+    .timeline-item:last-child { border-bottom: none; }
+
+    .timeline-item__year {
+      font-family: var(--ff-serif);
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--clr-text-muted);
+      padding-top: 0.15rem;
+    }
+
+    .timeline-item__content h4 {
+      font-family: var(--ff-serif);
+      font-size: 1.15rem;
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-item__content p {
+      font-size: 0.88rem;
+      color: var(--clr-text-muted);
+      line-height: 1.65;
+    }
+
+    .signature {
+      font-family: var(--ff-serif);
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--clr-bark);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .about-hero__image { aspect-ratio: 4 / 3; }
+      .about-body p { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sophia</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="index.html#books">Reading</a></li>
+      <li><a href="index.html#substack">Writing</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT HERO -->
+  <div class="about-hero">
+    <div class="about-hero__image">
+      <!-- ✏️  REPLACE this div with an <img> tag pointing to your photo:
+           <img src="images/sophia-portrait.jpg" alt="Sophia" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius-lg);" /> -->
+      <p class="about-hero__image-caption">— photo coming soon —</p>
+    </div>
+
+    <div class="about-hero__text">
+      <p class="page-hero__eyebrow" style="margin-bottom:1rem">About me</p>
+      <h1 class="about-hero__pull">
+        I am a teacher, a maker of images, and a <em>student of slow living.</em>
+      </h1>
+      <div class="about-divider"></div>
+
+      <!-- ✏️  WRITE YOUR OWN BIO in the paragraphs below. These are placeholder prompts. -->
+      <div class="about-body">
+        <p>
+          Hi, I'm Sophia. I'm a yoga teacher, photographer, and personal brand
+          guide based in [your city / region]. My work lives at the intersection
+          of movement, beauty, and intentional living.
+        </p>
+        <p>
+          I came to yoga after [a period of burnout / a need to reconnect / your
+          own story]. What started as a way to feel better in my body became a
+          full philosophy — one that now shapes how I move, how I see, and how I
+          help others build their own practices and businesses.
+        </p>
+        <p>
+          My photography grew out of a desire to document the textures of
+          everyday life — morning light through linen, hands cupped around a
+          warm mug, the soft pause between breath and movement. I bring that
+          same unhurried attention to every shoot.
+        </p>
+        <p>
+          When I'm not on the mat or behind a lens, you'll find me reading
+          in the garden, cooking something slow, or writing on my Substack.
+        </p>
+        <p class="signature">Sophia x</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <section class="section--shaded section--full" style="margin-top:5rem">
+    <div class="section__inner">
+      <span class="section__number">What I believe in</span>
+      <h2 class="section__title">A few true things</h2>
+
+      <div class="values-grid">
+        <!-- ✏️  UPDATE these values to reflect your own -->
+        <div class="value-item">
+          <p class="value-item__word">Slowness</p>
+          <p class="value-item__note">
+            Doing less, more fully. Presence over productivity.
+          </p>
+        </div>
+        <div class="value-item">
+          <p class="value-item__word">Rootedness</p>
+          <p class="value-item__note">
+            Returning to the body, to the earth, to what is real.
+          </p>
+        </div>
+        <div class="value-item">
+          <p class="value-item__word">Beauty</p>
+          <p class="value-item__note">
+            Not as performance, but as a way of paying attention.
+          </p>
+        </div>
+        <div class="value-item">
+          <p class="value-item__word">Honesty</p>
+          <p class="value-item__note">
+            In teaching, in images, in the stories we tell about ourselves.
+          </p>
+        </div>
+        <div class="value-item">
+          <p class="value-item__word">Community</p>
+          <p class="value-item__note">
+            We heal in relation. The mat, the studio, the table — all containers.
+          </p>
+        </div>
+        <div class="value-item">
+          <p class="value-item__word">Practice</p>
+          <p class="value-item__note">
+            Not mastery, but showing up daily with curiosity and kindness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / BACKGROUND -->
+  <section class="section">
+    <div style="max-width:700px">
+      <span class="section__number">Background</span>
+      <h2 class="section__title">How I got here</h2>
+
+      <!-- ✏️  REPLACE these timeline entries with your real qualifications and milestones -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-item__year">2015</span>
+          <div class="timeline-item__content">
+            <h4>First steps onto the mat</h4>
+            <p>Discovered yoga during [a period of change] and haven't left since.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2018</span>
+          <div class="timeline-item__content">
+            <h4>200hr Teacher Training</h4>
+            <p>Completed 200hr YTT at [School / Studio], studying [tradition/lineage].</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2019</span>
+          <div class="timeline-item__content">
+            <h4>First camera, first shoots</h4>
+            <p>Began photographing retreats and yoga spaces, discovering a natural eye for natural-light portraiture.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2021</span>
+          <div class="timeline-item__content">
+            <h4>300hr Advanced Training</h4>
+            <p>Deepened study with a focus on [Yin / Restorative / Anatomy — update to match yours].</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2023</span>
+          <div class="timeline-item__content">
+            <h4>Launched brand &amp; photography studio</h4>
+            <p>Began working with wellness entrepreneurs and creatives to shape their visual identity alongside photography services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">Now</span>
+          <div class="timeline-item__content">
+            <h4>Teaching, shooting, writing</h4>
+            <p>Weekly classes, retreats, brand shoots, and a growing Substack. All of it rooted in the same practice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSTACK STRIP -->
+  <div id="substack">
+    <div class="substack-strip">
+      <div class="substack-strip__text">
+        <p class="substack-strip__eyebrow">my writing</p>
+        <h2 class="substack-strip__title">Find me on Substack</h2>
+        <p class="substack-strip__body">
+          Essays on slow living, the body as teacher, and the quiet art of
+          paying attention.
+        </p>
+      </div>
+      <div class="substack-strip__cta">
+        <!-- ✏️  REPLACE href with your actual Substack URL -->
+        <a href="https://yourname.substack.com" target="_blank" rel="noopener" class="btn--substack">
+          Read &amp; Subscribe
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <section>
+    <div class="contact-block">
+      <h2 class="section__title">Say hello</h2>
+      <p class="section__body" style="margin-inline:auto; color:var(--clr-text-muted)">
+        I'd love to connect — whether you have a question about classes, a shoot
+        in mind, or just want to say hi.
+      </p>
+      <!-- ✏️  REPLACE with your real email -->
+      <a href="mailto:hello@sophia.com" class="btn btn--large btn--filled" style="display:inline-block; margin-bottom:2rem">
+        hello@sophia.com
+      </a>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Sophia. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

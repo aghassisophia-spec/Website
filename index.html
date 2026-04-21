@@ -11,150 +11,213 @@
 </head>
 <body>
 
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sophia</a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="#books">Reading</a></li>
+      <li><a href="#substack">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- HERO -->
   <header class="hero">
-    <div class="hero__inner">
-      <p class="hero__eyebrow">welcome</p>
-      <h1 class="hero__name">Sophia</h1>
-      <p class="hero__tagline">yoga teacher &nbsp;·&nbsp; personal brand &nbsp;·&nbsp; photographer</p>
-    </div>
+    <p class="hero__eyebrow">welcome to my world</p>
+    <h1 class="hero__name">Sophia</h1>
+    <p class="hero__tagline">yoga teacher &nbsp;·&nbsp; personal brand &nbsp;·&nbsp; photographer</p>
     <div class="hero__scroll-hint" aria-hidden="true">&#8595;</div>
   </header>
 
-  <!-- NAV -->
-  <nav class="nav" aria-label="Section navigation">
-    <a href="#yoga">Yoga</a>
-    <a href="#brand">Brand</a>
-    <a href="#photography">Photography</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- YOGA SECTION -->
-  <section id="yoga" class="section section--yoga">
-    <div class="section__mosaic">
-      <div class="mosaic-card mosaic-card--tall mosaic-card--accent-rose">
-        <span class="mosaic-card__label">movement</span>
-      </div>
-      <div class="mosaic-card mosaic-card--wide mosaic-card--soft-green">
-        <span class="mosaic-card__label">breath</span>
-      </div>
-      <div class="mosaic-card mosaic-card--square mosaic-card--blush">
-        <span class="mosaic-card__label">stillness</span>
-      </div>
-      <div class="mosaic-card mosaic-card--square mosaic-card--sage">
-        <span class="mosaic-card__label">ritual</span>
-      </div>
+  <!-- PERSONAL BRAND -->
+  <section class="section section--split">
+    <div class="mosaic">
+      <div class="mosaic-card mc--tall mc--moss"><span class="mosaic-card__label">rooted</span></div>
+      <div class="mosaic-card mc--square mc--tan"><span class="mosaic-card__label">identity</span></div>
+      <div class="mosaic-card mc--square mc--sand"><span class="mosaic-card__label">palette</span></div>
+      <div class="mosaic-card mc--wide mc--clay"><span class="mosaic-card__label">story</span></div>
     </div>
 
     <div class="section__copy">
       <span class="section__number">01</span>
-      <h2 class="section__title">Yoga Teaching</h2>
-      <p class="section__body">
-        I guide students through mindful movement, intentional breathwork, and
-        restorative stillness. Every class is an invitation to come home to
-        your body — whether you're stepping onto the mat for the first time or
-        deepening a long-standing practice.
-      </p>
-      <ul class="tag-list">
-        <li>Hatha</li>
-        <li>Vinyasa</li>
-        <li>Yin</li>
-        <li>Restorative</li>
-        <li>Private Sessions</li>
-        <li>Retreats</li>
-      </ul>
-      <a href="#contact" class="btn">Book a class</a>
-    </div>
-  </section>
-
-  <!-- BRAND SECTION -->
-  <section id="brand" class="section section--brand section--reversed">
-    <div class="section__copy">
-      <span class="section__number">02</span>
       <h2 class="section__title">Personal Brand</h2>
       <p class="section__body">
-        Your brand is the story only you can tell. I work with wellness
-        creatives, entrepreneurs, and artists to shape a visual and verbal
-        identity that feels effortlessly, unmistakably them — from moodboards
-        and colour palettes to copy and content strategy.
+        Your brand is the story only you can tell. I help wellness creatives,
+        teachers, and artists shape a visual and verbal identity that feels
+        effortlessly, unmistakably <em>them</em> — from mood boards and colour
+        palettes to copy and content strategy.
       </p>
       <ul class="tag-list">
         <li>Brand Identity</li>
         <li>Visual Direction</li>
-        <li>Colour & Type</li>
+        <li>Colour &amp; Type</li>
         <li>Content Strategy</li>
         <li>Social Presence</li>
       </ul>
       <a href="#contact" class="btn">Work with me</a>
     </div>
+  </section>
 
-    <div class="section__mosaic">
-      <div class="mosaic-card mosaic-card--wide mosaic-card--peach">
-        <span class="mosaic-card__label">identity</span>
+  <!-- YOGA TEASER -->
+  <section class="section section--split section--split-rev section--shaded">
+    <div class="section__inner" style="display:contents">
+      <div class="section__copy">
+        <span class="section__number">02</span>
+        <h2 class="section__title">Yoga Teaching</h2>
+        <p class="section__body">
+          Every class is an invitation to come home to your body. I guide
+          students through mindful movement, breathwork, and restorative
+          stillness — whether you're brand new to the mat or deepening a
+          long-standing practice.
+        </p>
+        <ul class="tag-list">
+          <li>Hatha</li>
+          <li>Vinyasa</li>
+          <li>Yin</li>
+          <li>Restorative</li>
+          <li>Private Sessions</li>
+          <li>Retreats</li>
+        </ul>
+        <a href="yoga.html" class="btn btn--filled">Explore classes</a>
       </div>
-      <div class="mosaic-card mosaic-card--tall mosaic-card--lavender">
-        <span class="mosaic-card__label">story</span>
-      </div>
-      <div class="mosaic-card mosaic-card--square mosaic-card--cream">
-        <span class="mosaic-card__label">palette</span>
-      </div>
-      <div class="mosaic-card mosaic-card--square mosaic-card--accent-rose">
-        <span class="mosaic-card__label">voice</span>
+
+      <div class="mosaic">
+        <div class="mosaic-card mc--wide mc--sage"><span class="mosaic-card__label">breath</span></div>
+        <div class="mosaic-card mc--square mc--parchment"><span class="mosaic-card__label">stillness</span></div>
+        <div class="mosaic-card mc--tall mc--fern"><span class="mosaic-card__label">movement</span></div>
+        <div class="mosaic-card mc--square mc--umber"><span class="mosaic-card__label">ritual</span></div>
       </div>
     </div>
   </section>
 
-  <!-- PHOTOGRAPHY SECTION -->
-  <section id="photography" class="section section--photography">
-    <div class="section__mosaic section__mosaic--gallery">
-      <div class="mosaic-card mosaic-card--portrait mosaic-card--sage">
-        <span class="mosaic-card__label">light</span>
-      </div>
-      <div class="mosaic-card mosaic-card--landscape mosaic-card--blush">
-        <span class="mosaic-card__label">texture</span>
-      </div>
-      <div class="mosaic-card mosaic-card--portrait mosaic-card--peach">
-        <span class="mosaic-card__label">moment</span>
-      </div>
-      <div class="mosaic-card mosaic-card--landscape mosaic-card--lavender">
-        <span class="mosaic-card__label">mood</span>
-      </div>
-      <div class="mosaic-card mosaic-card--square mosaic-card--soft-green">
-        <span class="mosaic-card__label">soul</span>
-      </div>
+  <!-- PHOTOGRAPHY TEASER -->
+  <section class="section section--split">
+    <div class="mosaic mosaic--3col">
+      <div class="mosaic-card mc--tall mc--bark"><span class="mosaic-card__label">light</span></div>
+      <div class="mosaic-card mc--square mc--sand"><span class="mosaic-card__label">texture</span></div>
+      <div class="mosaic-card mc--square mc--olive"><span class="mosaic-card__label">moment</span></div>
+      <div class="mosaic-card mc--span3 mc--tan"><span class="mosaic-card__label">— captured —</span></div>
     </div>
 
     <div class="section__copy">
       <span class="section__number">03</span>
       <h2 class="section__title">Photography</h2>
       <p class="section__body">
-        I capture the quiet, luminous details that make a moment — and a
-        person — unforgettable. My photography is soft, intentional, and
-        deeply personal, whether it's a branding shoot, a yoga editorial, or
-        a portrait session in natural light.
+        I photograph the quiet, luminous details that make a person and a
+        moment unforgettable. Soft, intentional, deeply personal — whether
+        it's a brand shoot, a yoga editorial, or a portrait session in
+        golden-hour light.
       </p>
       <ul class="tag-list">
         <li>Brand Photography</li>
         <li>Portraiture</li>
         <li>Editorial</li>
-        <li>Yoga & Wellness</li>
+        <li>Yoga &amp; Wellness</li>
         <li>Natural Light</li>
       </ul>
-      <a href="#contact" class="btn">Enquire</a>
+      <a href="photography.html" class="btn">See the work</a>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="section section--contact">
-    <div class="contact__inner">
+  <!-- BOOKS -->
+  <section id="books" class="section--shaded section--full">
+    <div class="section__inner" style="max-width:var(--max-w); margin:0 auto; padding-inline:clamp(1.5rem,8vw,7rem)">
       <span class="section__number">04</span>
-      <h2 class="section__title">Let's Connect</h2>
-      <p class="section__body">
-        Whether you're looking to step onto the mat, build your brand, or
-        create images that feel like you — I'd love to hear from you.
+      <h2 class="section__title">On my nightstand</h2>
+      <p class="section__body" style="max-width:50ch; color:var(--clr-text-muted)">
+        Books that have shaped my practice, my eye, and the way I move through
+        the world. Updated as I turn the last page.
       </p>
-      <a href="mailto:hello@sophia.com" class="btn btn--large">hello@sophia.com</a>
+
+      <!-- ✏️  UPDATE THESE BOOK CARDS WITH YOUR OWN RECOMMENDATIONS -->
+      <div class="books-grid">
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-moss)"></div>
+          <p class="book-card__title">Women Who Run with the Wolves</p>
+          <p class="book-card__author">Clarissa Pinkola Estés</p>
+          <p class="book-card__note">A reclamation of wild feminine instinct — I return to it every autumn.</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-clay)"></div>
+          <p class="book-card__title">The Artist's Way</p>
+          <p class="book-card__author">Julia Cameron</p>
+          <p class="book-card__note">Morning pages changed how I see creativity as a daily practice, not a gift.</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-bark)"></div>
+          <p class="book-card__title">Light on Yoga</p>
+          <p class="book-card__author">B.K.S. Iyengar</p>
+          <p class="book-card__note">The definitive guide that sits on my teacher shelf, spine worn and annotated.</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-sage)"></div>
+          <p class="book-card__title">Big Magic</p>
+          <p class="book-card__author">Elizabeth Gilbert</p>
+          <p class="book-card__note">Permission to make things for the joy of making them, not for applause.</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-tan)"></div>
+          <p class="book-card__title">When Things Fall Apart</p>
+          <p class="book-card__author">Pema Chödrön</p>
+          <p class="book-card__note">Tender, honest teachings on uncertainty. A companion during difficult seasons.</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-card__spine" style="background:var(--clr-fern)"></div>
+          <p class="book-card__title">On Photography</p>
+          <p class="book-card__author">Susan Sontag</p>
+          <p class="book-card__note">A philosophical lens on what it means to capture the world in images.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSTACK -->
+  <div id="substack">
+    <div class="substack-strip">
+      <div class="substack-strip__text">
+        <p class="substack-strip__eyebrow">writing &amp; reflections</p>
+        <!-- ✏️  UPDATE the title and description below to match your Substack -->
+        <h2 class="substack-strip__title">Read my Substack</h2>
+        <p class="substack-strip__body">
+          Essays on slow living, the body as teacher, and the quiet art of
+          paying attention. Published when something feels worth saying.
+        </p>
+      </div>
+      <div class="substack-strip__cta">
+        <!-- ✏️  REPLACE href with your actual Substack URL, e.g. https://yourname.substack.com -->
+        <a href="https://yourname.substack.com" target="_blank" rel="noopener" class="btn--substack">
+          Read &amp; Subscribe
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-block">
+      <span class="section__number">05</span>
+      <h2 class="section__title">Let's Connect</h2>
+      <p class="section__body" style="max-width:44ch; margin-inline:auto; color:var(--clr-text-muted)">
+        Whether you want to step onto the mat, build your brand, or create
+        images that feel like you — I'd love to hear from you.
+      </p>
+      <!-- ✏️  REPLACE with your real email -->
+      <a href="mailto:hello@sophia.com" class="btn btn--large btn--filled" style="display:inline-block; margin-bottom:2rem">
+        hello@sophia.com
+      </a>
       <div class="social-links">
+        <!-- ✏️  REPLACE hrefs with your real social links -->
         <a href="#" aria-label="Instagram">Instagram</a>
         <a href="#" aria-label="Pinterest">Pinterest</a>
         <a href="#" aria-label="LinkedIn">LinkedIn</a>

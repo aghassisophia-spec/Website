@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography — Sophia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sophia</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="photography.html" class="active">Photography</a></li>
+      <li><a href="index.html#books">Reading</a></li>
+      <li><a href="index.html#substack">Writing</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="page-hero__eyebrow">photography</p>
+    <h1 class="page-hero__title">Light, texture,<br><em>the quiet in-between.</em></h1>
+    <p class="page-hero__body">
+      I work in natural light, with slow intention. My images lean into warmth,
+      shadow, and the small details that hold the whole feeling of a moment.
+    </p>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <span class="section__number">Portfolio</span>
+    <h2 class="section__title">Selected work</h2>
+    <!-- ✏️  REPLACE these colour-swatch cards with <img> tags when you have real photos -->
+    <div class="gallery-masonry">
+      <div class="mosaic-card mc--bark"><span class="mosaic-card__label">brand — The Root Studio</span></div>
+      <div class="mosaic-card mc--sage"><span class="mosaic-card__label">portrait — morning light</span></div>
+      <div class="mosaic-card mc--tan"><span class="mosaic-card__label">yoga editorial</span></div>
+      <div class="mosaic-card mc--moss"><span class="mosaic-card__label">brand — Solstice Wellness</span></div>
+      <div class="mosaic-card mc--parchment"><span class="mosaic-card__label">still life — ceramics</span></div>
+      <div class="mosaic-card mc--clay"><span class="mosaic-card__label">portrait — golden hour</span></div>
+      <div class="mosaic-card mc--fern"><span class="mosaic-card__label">retreat documentation</span></div>
+      <div class="mosaic-card mc--sand"><span class="mosaic-card__label">product — botanical oils</span></div>
+      <div class="mosaic-card mc--umber"><span class="mosaic-card__label">yoga editorial — yin series</span></div>
+    </div>
+  </section>
+
+  <!-- APPROACH SPLIT -->
+  <section class="section--shaded section--full">
+    <div class="section__inner" style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; max-width:var(--max-w); margin:0 auto; padding-inline:clamp(1.5rem,8vw,7rem)">
+      <div>
+        <span class="section__number">Approach</span>
+        <h2 class="section__title">Photography<br>as presence</h2>
+        <p class="section__body">
+          I don't arrive on a shoot with a rigid shot list. I arrive curious.
+          I watch for the way light falls across a surface, the way a person
+          exhales before they're ready — and that's the frame.
+        </p>
+        <p class="section__body">
+          The result is imagery that feels inhabited, not performed.
+        </p>
+      </div>
+
+      <div class="mosaic">
+        <div class="mosaic-card mc--tall mc--olive"><span class="mosaic-card__label">observe</span></div>
+        <div class="mosaic-card mc--square mc--parchment"><span class="mosaic-card__label">wait</span></div>
+        <div class="mosaic-card mc--square mc--fern"><span class="mosaic-card__label">feel</span></div>
+        <div class="mosaic-card mc--wide mc--tan"><span class="mosaic-card__label">— capture —</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <span class="section__number">Services</span>
+    <h2 class="section__title">What I offer</h2>
+
+    <div class="card-row" style="margin-top:2.5rem">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9632;</div>
+        <h3 class="feature-card__title">Brand Photography</h3>
+        <p class="feature-card__body">
+          Full-day or half-day shoots for coaches, wellness practitioners, and
+          creative businesses. Delivered gallery includes headshots, lifestyle,
+          detail, and social-ready assets.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9650;</div>
+        <h3 class="feature-card__title">Portraiture</h3>
+        <p class="feature-card__body">
+          Intimate, unhurried portrait sessions in natural settings or at
+          your home. Ideal for artists, authors, and anyone who wants images
+          that feel genuinely like them.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9670;</div>
+        <h3 class="feature-card__title">Yoga &amp; Wellness Editorial</h3>
+        <p class="feature-card__body">
+          Movement and wellness photography for teachers, studios, and
+          publications. I understand the practice from the inside, which
+          shows in every frame.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9675;</div>
+        <h3 class="feature-card__title">Product &amp; Still Life</h3>
+        <p class="feature-card__body">
+          Beautifully lit, natural product photography for ceramicists,
+          skincare brands, herbalists, and small-batch makers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS DARK BAND -->
+  <section class="section--dark">
+    <div class="section__inner" style="padding-block:5rem">
+      <span class="section__number">Process</span>
+      <h2 class="section__title" style="color:#f4f0e6">How it works</h2>
+
+      <div class="card-row" style="margin-top:2.5rem">
+        <div style="color:#f4f0e6">
+          <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b0a090; margin-bottom:0.5rem">01</p>
+          <h3 style="font-family:var(--ff-serif); font-size:1.3rem; font-weight:400; margin-bottom:0.6rem">Discovery call</h3>
+          <p style="font-size:0.9rem; color:#b0a090; line-height:1.7">We talk through your vision, your brand, and what you need the images to do. No pressure, just conversation.</p>
+        </div>
+        <div style="color:#f4f0e6">
+          <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b0a090; margin-bottom:0.5rem">02</p>
+          <h3 style="font-family:var(--ff-serif); font-size:1.3rem; font-weight:400; margin-bottom:0.6rem">Mood board &amp; prep</h3>
+          <p style="font-size:0.9rem; color:#b0a090; line-height:1.7">I build a visual brief so we arrive on shoot day aligned on light, mood, and direction.</p>
+        </div>
+        <div style="color:#f4f0e6">
+          <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b0a090; margin-bottom:0.5rem">03</p>
+          <h3 style="font-family:var(--ff-serif); font-size:1.3rem; font-weight:400; margin-bottom:0.6rem">The shoot</h3>
+          <p style="font-size:0.9rem; color:#b0a090; line-height:1.7">Unhurried, intentional, collaborative. I'll guide you through the session so you can relax and simply be.</p>
+        </div>
+        <div style="color:#f4f0e6">
+          <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b0a090; margin-bottom:0.5rem">04</p>
+          <h3 style="font-family:var(--ff-serif); font-size:1.3rem; font-weight:400; margin-bottom:0.6rem">Delivery</h3>
+          <p style="font-size:0.9rem; color:#b0a090; line-height:1.7">Fully edited gallery delivered within two weeks via a private online gallery, ready to download and use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section>
+    <div class="contact-block">
+      <h2 class="section__title">Let's make something<br><em>beautiful.</em></h2>
+      <p class="section__body" style="margin-inline:auto; color:var(--clr-text-muted)">
+        I take on a limited number of shoots each month. Reach out to check
+        availability and start the conversation.
+      </p>
+      <!-- ✏️  REPLACE with your real email -->
+      <a href="mailto:hello@sophia.com" class="btn btn--large btn--filled" style="display:inline-block; margin-bottom:2rem">
+        hello@sophia.com
+      </a>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Sophia. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
